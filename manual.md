@@ -105,25 +105,6 @@ $ sudo journalctl -f -u isu-go
 
 などで見ることができます。
 
-#### node.jsへの切り替え方
-
-起動する実装をnode.jsに切り替えるには、以下の操作を行います。
-
-```
-$ sudo systemctl stop isu-ruby
-$ sudo systemctl start isu-node
-```
-
-プログラムの詳しい起動方法は、 /etc/systemd/system/isu-node.service を参照してください。
-
-エラーなどの出力については、
-
-```
-$ sudo journalctl -f -u isu-node
-```
-
-などで見ることができます。
-
 ### MySQL
 
 3306番ポートでMySQLが起動しています。初期状態では以下のユーザが設定されています。
